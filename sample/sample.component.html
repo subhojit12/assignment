@@ -1,0 +1,13 @@
+<menu></menu>
+<div class="row">
+  <div class="col-md-5 col-md-offset-1">
+    <input type="button" value="Add Buttton" (click)="addButton()"><br>
+    <input type="text"  name="id" [(ngModel)]="num" name="num"><br>
+    <input type="button" value="Remove Button" (click)="removeButton(num)">
+  </div>
+  <div class="col-md-5" >
+    <div *ngFor="let button of buttons">
+        <button>{{button.name}}</button>
+    </div>          
+  </div>
+</div>
